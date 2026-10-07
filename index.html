@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEO OCULAR | Advanced Eye Care & Vision Solutions</title>
+  <meta name="description" content="Discover exceptional vision solutions designed to protect, preserve, and enhance your vision at Neo Ocular Eye Care Clinic.">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/logo_0027.webp" alt="Stackly Logo" class="site-logo">
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-primary">Login</a>
+        <div class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- SECTION 01: HERO SECTION SLIDER -->
+  <!-- Font style: Elegant Serif – Playfair Display / Cormorant Garamond -->
+  <section class="hero-section" id="heroSliderSection">
+    <!-- Slider Background Images Container -->
+    <div class="hero-slider-bg-container">
+      <div class="hero-slide-bg active" data-slide="0">
+        <img src="assets/images/hero_slide_1.png" alt="Neo Ocular Clinical Vision Specialist" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+      <div class="hero-slide-bg" data-slide="1">
+        <img src="assets/images/hero_slide_2.png" alt="Sub-Micron Ophthalmic Diagnostics" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+      <div class="hero-slide-bg" data-slide="2">
+        <img src="assets/images/hero_slide_3.png" alt="Bespoke Optical Eyewear Atelier" class="hero-bg-img">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+    </div>
+
+    <!-- Vertical Side Badge -->
+    <div class="hero-side-badge">
+      Eye Care & Optical Store Leaders
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-floating-card">
+        <div class="hero-card-brand">
+          <div class="brand-logo">
+            <img src="assets/images/logo_0027.webp" alt="Stackly Logo" class="site-logo">
+          </div>
+        </div>
+        
+        <!-- Slide 0 Content -->
+        <div class="hero-slide-content active" data-slide="0">
+          <span class="hero-card-tagline">Clinical Excellence</span>
+          <h1 class="hero-card-title font-playfair">
+            See the World Through a Clearer Perspective.
+          </h1>
+          <p class="hero-card-desc font-cormorant">
+            Advanced eye care meets personalized attention. Discover exceptional vision solutions designed to protect, preserve, and enhance the way you see the world.
+          </p>
+          <div class="hero-btn-group">
+            <button class="btn btn-primary" data-modal-target="bookingModal">Book Your Eye Consultation <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="services.html" class="btn btn-outline">Explore Treatments</a>
+          </div>
+        </div>
+
+        <!-- Slide 1 Content -->
+        <div class="hero-slide-content" data-slide="1">
+          <span class="hero-card-tagline">Ophthalmic Innovation</span>
+          <h1 class="hero-card-title font-playfair">
+            Sub-Micron 3D Retinal Scans & Precision Care.
+          </h1>
+          <p class="hero-card-desc font-cormorant">
+            Equipped with state-of-the-art ZEISS 3D OCT scanners and Wavefront corneal topographers for early prevention and customized care pathways.
+          </p>
+          <div class="hero-btn-group">
+            <a href="services.html" class="btn btn-primary">Advanced Technology <i class="fa-solid fa-microchip"></i></a>
+            <a href="about.html" class="btn btn-outline">Meet Specialists</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 Content -->
+        <div class="hero-slide-content" data-slide="2">
+          <span class="hero-card-tagline">Bespoke Frame Atelier</span>
+          <h1 class="hero-card-title font-playfair">
+            Handcrafted Frames & High-Definition Optics.
+          </h1>
+          <p class="hero-card-desc font-cormorant">
+            Curated international designer optical collections paired with digital lens customization tailored to your visual lifestyle.
+          </p>
+          <div class="hero-btn-group">
+            <button class="btn btn-primary" data-modal-target="bookingModal">Schedule Fitting <i class="fa-solid fa-glasses"></i></button>
+            <a href="contact.html" class="btn btn-outline">Visit Our Gallery</a>
+          </div>
+        </div>
+
+        <!-- Slider Controls inside Floating Card Footer -->
+        <div class="hero-slider-controls">
+          <div class="hero-slider-arrows">
+            <button class="slider-arrow prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-arrow next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <div class="hero-slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+          <div class="hero-slider-counter">
+            <span class="current-slide">01</span> / <span class="total-slides">03</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: OUR EXPERTISE - INTRODUCTION -->
+  <!-- Font style: Modern Sans-Serif – Manrope -->
+  <section class="section-padding expertise-section" id="expertise">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-manrope">Our Expertise</span>
+        <h2 class="heading-lg font-manrope">Exceptional Eye Care, Designed Around You.</h2>
+        <p class="text-muted font-manrope" style="margin-top: 1rem; font-size: 1.05rem;">
+          Where medical expertise, advanced technology, and compassionate care come together to create a better vision experience.
+        </p>
+      </div>
+
+      <div class="expertise-grid">
+        <!-- Highlight 1 -->
+        <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="expertise-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3 class="heading-sm font-manrope" style="margin-bottom: 0.8rem;">Comprehensive Eye Examinations</h3>
+          <p class="text-muted font-manrope" style="font-size: 0.92rem;">Multi-layered 40-point visual acuity scans, ocular pressure checks, and preventative diagnostics.</p>
+        </div>
+
+        <!-- Highlight 2 -->
+        <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="expertise-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3 class="heading-sm font-manrope" style="margin-bottom: 0.8rem;">Advanced Vision Correction</h3>
+          <p class="text-muted font-manrope" style="font-size: 0.92rem;">State-of-the-art femtosecond LASIK, wavefront ablation, and customized refractive solutions.</p>
+        </div>
+
+        <!-- Highlight 3 -->
+        <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="expertise-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="heading-sm font-manrope" style="margin-bottom: 0.8rem;">Specialized Eye Treatments</h3>
+          <p class="text-muted font-manrope" style="font-size: 0.92rem;">Expert therapy for dry eye syndrome, meibomian dysfunction, glaucoma, and macular preservation.</p>
+        </div>
+
+        <!-- Highlight 4 -->
+        <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="expertise-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3 class="heading-sm font-manrope" style="margin-bottom: 0.8rem;">Personalized Patient Care</h3>
+          <p class="text-muted font-manrope" style="font-size: 0.92rem;">Tailored diagnostic roadmaps, dedicated doctor consultations, and holistic visual wellness support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 03: OUR EYE CARE SERVICES -->
+  <!-- Font style: Bold Geometric – Poppins -->
+  <section class="section-padding services-section-poppins" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-poppins">Our Eye Care Services</span>
+        <h2 class="heading-lg font-poppins">Complete Vision Care for Every Stage of Life.</h2>
+        <p class="text-muted font-poppins" style="margin-top: 0.8rem;">
+          Explore a comprehensive range of eye care services delivered with precision, innovation, and clinical expertise.
+        </p>
+      </div>
+
+      <div class="services-grid-4">
+        <!-- Service 1 -->
+        <div class="poppins-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="poppins-card-img">
+            <img src="assets/images/service_1.webp" alt="Comprehensive Eye Exams">
+          </div>
+          <div class="poppins-card-body">
+            <span class="sub-title font-poppins" style="font-size: 0.7rem;">Clinical Exam</span>
+            <h3 class="heading-sm font-poppins" style="margin-bottom: 0.6rem;">Comprehensive Eye Exams</h3>
+            <p class="text-muted font-poppins" style="font-size: 0.88rem; margin-bottom: 1.2rem;">Detailed assessments for lifelong vision health, including digital retinal topography and acuity mapping.</p>
+            <a href="services.html" style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; color: var(--clr-accent-teal);">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="poppins-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="poppins-card-img">
+            <img src="assets/images/service_2.webp" alt="Cataract Care">
+          </div>
+          <div class="poppins-card-body">
+            <span class="sub-title font-poppins" style="font-size: 0.7rem;">Surgical Care</span>
+            <h3 class="heading-sm font-poppins" style="margin-bottom: 0.6rem;">Cataract Care</h3>
+            <p class="text-muted font-poppins" style="font-size: 0.88rem; margin-bottom: 1.2rem;">Advanced evaluation and premium intraocular lens surgical replacement options.</p>
+            <a href="services.html" style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; color: var(--clr-accent-teal);">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="poppins-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="poppins-card-img">
+            <img src="assets/images/service_6.webp" alt="Retina & Eye Health">
+          </div>
+          <div class="poppins-card-body">
+            <span class="sub-title font-poppins" style="font-size: 0.7rem;">Retinal Suite</span>
+            <h3 class="heading-sm font-poppins" style="margin-bottom: 0.6rem;">Retina & Eye Health</h3>
+            <p class="text-muted font-poppins" style="font-size: 0.88rem; margin-bottom: 1.2rem;">Specialized monitoring of retinal conditions using micron-resolution 3D OCT scanning technology.</p>
+            <a href="services.html" style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; color: var(--clr-accent-teal);">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="poppins-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="poppins-card-img">
+            <img src="assets/images/service_3.webp" alt="Vision Correction">
+          </div>
+          <div class="poppins-card-body">
+            <span class="sub-title font-poppins" style="font-size: 0.7rem;">Optics & LASIK</span>
+            <h3 class="heading-sm font-poppins" style="margin-bottom: 0.6rem;">Vision Correction</h3>
+            <p class="text-muted font-poppins" style="font-size: 0.88rem; margin-bottom: 1.2rem;">Personalized solutions for clearer vision through laser refractive procedures and custom optical lenses.</p>
+            <a href="services.html" style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; color: var(--clr-accent-teal);">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04: ADVANCED TECHNOLOGY -->
+  <!-- Font style: Editorial Serif – Libre Baskerville -->
+  <section class="section-padding tech-section-libre">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-libre" style="color: var(--clr-accent-gold);">Clinical Innovation</span>
+        <h2 class="heading-lg font-libre">Precision Technology. A New Standard in Vision Care.</h2>
+        <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.8); font-size: 1.05rem;">
+          We embrace modern diagnostic equipment and advanced clinical techniques to support accurate assessments and personalized treatment planning.
+        </p>
+      </div>
+
+      <div class="libre-grid">
+        <div class="libre-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-microscope" style="font-size: 2.2rem; color: var(--clr-accent-gold); margin-bottom: 1.2rem;"></i>
+          <h3 class="heading-sm font-libre" style="color: #fff; margin-bottom: 0.8rem;">ZEISS CIRRUS 3D OCT Scanner</h3>
+          <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.9rem;">Provides micro-layer retinal cross-sections for early diagnosis of glaucoma, macular edema, and optic nerve degeneration.</p>
+        </div>
+
+        <div class="libre-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-solid fa-bolt-lightning" style="font-size: 2.2rem; color: var(--clr-accent-gold); margin-bottom: 1.2rem;"></i>
+          <h3 class="heading-sm font-libre" style="color: #fff; margin-bottom: 0.8rem;">Wavefront Corneal Topographer</h3>
+          <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.9rem;">Maps thousands of elevation points across the cornea to craft 100% customized laser vision treatment profiles.</p>
+        </div>
+
+        <div class="libre-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-droplet" style="font-size: 2.2rem; color: var(--clr-accent-gold); margin-bottom: 1.2rem;"></i>
+          <h3 class="heading-sm font-libre" style="color: #fff; margin-bottom: 0.8rem;">LipiFlow Thermal Pulsation</h3>
+          <p style="color: rgba(255, 255, 255, 0.75); font-size: 0.9rem;">Applies localized heat and gentle peristaltic motion to restore natural meibomian gland oil flow for chronic dry eyes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 05: WHY CHOOSE OUR CLINIC? -->
+  <!-- Font style: Minimal Sans-Serif – Inter -->
+  <section class="section-padding why-us-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-inter">Why Choose Our Clinic?</span>
+        <h2 class="heading-lg font-inter">Your Vision Deserves Exceptional Attention.</h2>
+      </div>
+
+      <div class="why-us-grid">
+        <!-- Highlight 1 -->
+        <div class="why-us-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-us-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <div>
+            <h3 class="heading-sm font-inter" style="margin-bottom: 0.4rem; font-size: 1.15rem;">Experienced Eye Care Specialists</h3>
+            <p class="text-muted font-inter" style="font-size: 0.88rem;">Board-certified ophthalmologists and optometrists with extensive clinical surgical practice.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 2 -->
+        <div class="why-us-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="why-us-icon"><i class="fa-solid fa-hospital-user"></i></div>
+          <div>
+            <h3 class="heading-sm font-inter" style="margin-bottom: 0.4rem; font-size: 1.15rem;">Modern Diagnostic Facilities</h3>
+            <p class="text-muted font-inter" style="font-size: 0.88rem;">State-of-the-art diagnostic suites designed for precision visual acuity and corneal mapping.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 3 -->
+        <div class="why-us-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-us-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+          <div>
+            <h3 class="heading-sm font-inter" style="margin-bottom: 0.4rem; font-size: 1.15rem;">Patient-Centred Treatment Plans</h3>
+            <p class="text-muted font-inter" style="font-size: 0.88rem;">Custom healthcare strategies crafted around your lifestyle, optical requirements, and vision goals.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 4 -->
+        <div class="why-us-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="why-us-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div>
+            <h3 class="heading-sm font-inter" style="margin-bottom: 0.4rem; font-size: 1.15rem;">Comprehensive Vision Assessments</h3>
+            <p class="text-muted font-inter" style="font-size: 0.88rem;">In-depth 40-point eye examinations covering binocular alignment, intraocular pressure, and retinal health.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 5 -->
+        <div class="why-us-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-us-icon"><i class="fa-solid fa-couch"></i></div>
+          <div>
+            <h3 class="heading-sm font-inter" style="margin-bottom: 0.4rem; font-size: 1.15rem;">Comfortable Clinical Environment</h3>
+            <p class="text-muted font-inter" style="font-size: 0.88rem;">Boutique relaxation suites, calm diagnostic spaces, and personalized patient concierge assistance.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 6 -->
+        <div class="why-us-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="why-us-icon"><i class="fa-solid fa-headset"></i></div>
+          <div>
+            <h3 class="heading-sm font-inter" style="margin-bottom: 0.4rem; font-size: 1.15rem;">Dedicated Follow-Up Support</h3>
+            <p class="text-muted font-inter" style="font-size: 0.88rem;">Continuous post-consultation care, digital portal monitoring, and direct specialist communication.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06: MEET OUR EYE SPECIALISTS -->
+  <!-- Font style: Sophisticated Serif – DM Serif Display -->
+  <section class="section-padding doctors-section-dm">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-dm-serif">Meet Our Eye Specialists</span>
+        <h2 class="heading-lg font-dm-serif">The Experts Behind Your Brighter Vision.</h2>
+        <p class="text-muted font-dm-serif" style="margin-top: 0.8rem; font-size: 1.1rem;">
+          Meet our dedicated eye care professionals, committed to delivering thoughtful guidance, clinical expertise, and personalized attention.
+        </p>
+      </div>
+
+      <div class="doctors-grid">
+        <!-- Doctor 1 -->
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="doctor-img-box">
+            <img src="assets/images/doctor_1.webp" alt="Dr. Elena Rostova">
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name font-dm-serif">Dr. Elena Rostova</h3>
+            <div class="doctor-role font-dm-serif">Chief Refractive Surgeon</div>
+            <p class="doctor-bio font-dm-serif" style="font-size: 0.95rem;">Specializing in femtosecond LASIK, custom corneal wavefront ablation, and complex cataract procedures.</p>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="doctor-img-box">
+            <img src="assets/images/doctor_2.webp" alt="Dr. Marcus Vance">
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name font-dm-serif">Dr. Marcus Vance</h3>
+            <div class="doctor-role font-dm-serif">Senior Optometrist & Contact Lens Fellow</div>
+            <p class="doctor-bio font-dm-serif" style="font-size: 0.95rem;">Expert in scleral lens fitting, severe keratoconus management, and specialty ocular surface rehabilitation.</p>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="doctor-img-box">
+            <img src="assets/images/doctor_3.webp" alt="Dr. Sophia Lin">
+          </div>
+          <div class="doctor-info">
+            <h3 class="doctor-name font-dm-serif">Dr. Sophia Lin</h3>
+            <div class="doctor-role font-dm-serif">Pediatric Vision Director</div>
+            <p class="doctor-bio font-dm-serif" style="font-size: 0.95rem;">Pioneer in pediatric binocular vision therapy, amblyopia treatment, and overnight Ortho-K myopia control.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;" data-aos="fade-up">
+        <a href="about.html" class="btn btn-primary font-dm-serif">Meet Our Specialists <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 07: YOUR EYE HEALTH JOURNEY -->
+  <!-- Font style: Contemporary – Outfit -->
+  <section class="section-padding journey-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-outfit">Your Eye Health Journey</span>
+        <h2 class="heading-lg font-outfit">From First Consultation to Confident Vision.</h2>
+      </div>
+
+      <div class="journey-grid">
+        <!-- Step 1 -->
+        <div class="journey-step-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-num font-outfit">01</div>
+          <h3 class="heading-sm font-outfit" style="margin-bottom: 0.6rem;">Connect</h3>
+          <p class="text-muted font-outfit" style="font-size: 0.92rem;">Schedule your eye care appointment online or through our concierge patient service team.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="journey-step-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-num font-outfit">02</div>
+          <h3 class="heading-sm font-outfit" style="margin-bottom: 0.6rem;">Discover</h3>
+          <p class="text-muted font-outfit" style="font-size: 0.92rem;">Receive a comprehensive eye assessment using 3D OCT scanning and digital wavefront topography.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="journey-step-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="step-num font-outfit">03</div>
+          <h3 class="heading-sm font-outfit" style="margin-bottom: 0.6rem;">Understand</h3>
+          <p class="text-muted font-outfit" style="font-size: 0.92rem;">Explore personalized treatment options, custom optics choices, or laser correction roadmaps.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="journey-step-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="step-num font-outfit">04</div>
+          <h3 class="heading-sm font-outfit" style="margin-bottom: 0.6rem;">Care</h3>
+          <p class="text-muted font-outfit" style="font-size: 0.92rem;">Continue with dedicated follow-up support, periodic visual checkups, and optical maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 08: PATIENT EXPERIENCES -->
+  <!-- Font style: Elegant Serif – Cormorant Garamond -->
+  <section class="section-padding reviews-cormorant" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-cormorant" style="color: var(--clr-accent-gold);">Patient Experiences</span>
+        <h2 class="heading-lg font-cormorant" style="color: #fff;">Stories of Care. Moments of Clarity.</h2>
+        <p style="margin-top: 0.8rem; color: rgba(255, 255, 255, 0.7); font-size: 1.15rem;" class="font-cormorant">
+          Every patient journey is unique. Discover experiences shared by individuals who have trusted us with their vision care.
+        </p>
+      </div>
+
+      <div class="services-grid-4">
+        <!-- Review 1 -->
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: var(--radius-md);" data-aos="fade-up" data-aos-delay="100">
+          <div style="color: var(--clr-accent-gold); margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="font-cormorant" style="font-size: 1.12rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; font-style: italic;">
+            "The laser vision procedure with Dr. Rostova changed my daily routine completely. The diagnostic precision before surgery gave me total peace of mind."
+          </p>
+          <div style="font-weight: 700; font-size: 1rem; color: #fff;" class="font-cormorant">Jonathan Hayes</div>
+          <div style="font-size: 0.82rem; color: var(--clr-accent-gold);" class="font-cormorant">LASIK Surgical Patient</div>
+        </div>
+
+        <!-- Review 2 -->
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: var(--radius-md);" data-aos="fade-up" data-aos-delay="200">
+          <div style="color: var(--clr-accent-gold); margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="font-cormorant" style="font-size: 1.12rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; font-style: italic;">
+            "After years of suffering from digital screen dry eye, the LipiFlow treatment at Neo Ocular relieved my discomfort within days. Exceptional clinical team!"
+          </p>
+          <div style="font-weight: 700; font-size: 1rem; color: #fff;" class="font-cormorant">Clara Thorne</div>
+          <div style="font-size: 0.82rem; color: var(--clr-accent-gold);" class="font-cormorant">Dry Eye Spa Patient</div>
+        </div>
+
+        <!-- Review 3 -->
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: var(--radius-md);" data-aos="fade-up" data-aos-delay="300">
+          <div style="color: var(--clr-accent-gold); margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="font-cormorant" style="font-size: 1.12rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; font-style: italic;">
+            "Dr. Lin introduced Ortho-K lenses for our 10-year-old son. His myopia progression halted completely, and he no longer needs specs at school."
+          </p>
+          <div style="font-weight: 700; font-size: 1rem; color: #fff;" class="font-cormorant">David & Elena Ross</div>
+          <div style="font-size: 0.82rem; color: var(--clr-accent-gold);" class="font-cormorant">Pediatric Ortho-K Parents</div>
+        </div>
+
+        <!-- Review 4 -->
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: var(--radius-md);" data-aos="fade-up" data-aos-delay="400">
+          <div style="color: var(--clr-accent-gold); margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="font-cormorant" style="font-size: 1.12rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); margin-bottom: 1.5rem; font-style: italic;">
+            "The frame atelier selection is unparalleled. I found a pair of titanium handcrafted specs that perfectly suit my prescription and personal style."
+          </p>
+          <div style="font-weight: 700; font-size: 1rem; color: #fff;" class="font-cormorant">Victoria Sterling</div>
+          <div style="font-size: 0.82rem; color: var(--clr-accent-gold);" class="font-cormorant">Optical Styling Client</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 09: EYE HEALTH INSIGHTS -->
+  <!-- Font style: Modern Editorial – Plus Jakarta Sans -->
+  <section class="section-padding blog-jakarta">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="sub-title font-jakarta">Eye Health Insights</span>
+        <h2 class="heading-lg font-jakarta">A Clearer Understanding of Your Eye Health.</h2>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <div class="blog-card card-hover-fx" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-img-box">
+            <img src="assets/images/blog_1.webp" alt="7 Essential Habits for Maintaining Healthy Eyes">
+            <span class="blog-date">Oct 03, 2026</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag font-jakarta">Ocular Wellness</span>
+            <h3 class="blog-title font-jakarta">7 Essential Habits for Maintaining Healthy Eyes</h3>
+            <p class="blog-excerpt font-jakarta">Daily lifestyle adjustments, optimal nutrition, and ocular hygiene tips recommended by top eye specialists.</p>
+            <a href="blog.html" class="service-link font-jakarta" style="margin-top: auto;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card card-hover-fx" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-img-box">
+            <img src="assets/images/blog_2.webp" alt="Understanding the Early Signs of Vision Problems">
+            <span class="blog-date">Sep 28, 2026</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag font-jakarta">Early Diagnosis</span>
+            <h3 class="blog-title font-jakarta">Understanding the Early Signs of Vision Problems</h3>
+            <p class="blog-excerpt font-jakarta">Recognizing subtle shifts in visual acuity, night glare, and eye pressure before vision loss occurs.</p>
+            <a href="blog.html" class="service-link font-jakarta" style="margin-top: auto;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card card-hover-fx" data-aos="fade-up" data-aos-delay="300">
+          <div class="blog-img-box">
+            <img src="assets/images/service_5.webp" alt="Digital Eye Strain">
+            <span class="blog-date">Sep 18, 2026</span>
+          </div>
+          <div class="blog-content">
+            <span class="blog-tag font-jakarta">Digital Health</span>
+            <h3 class="blog-title font-jakarta">Digital Eye Strain: Protecting Your Eyes in a Screen-Filled World</h3>
+            <p class="blog-excerpt font-jakarta">How specular blue-blocking optics and micro-breaks alleviate fatigue during long workstation hours.</p>
+            <a href="blog.html" class="service-link font-jakarta" style="margin-top: auto;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3.5rem;" data-aos="fade-up">
+        <a href="blog.html" class="btn btn-primary font-jakarta">Explore All Articles <i class="fa-solid fa-newspaper"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: FINAL APPOINTMENT CTA -->
+  <!-- Font style: Luxury Serif – Playfair Display -->
+  <section class="cta-playfair">
+    <div class="container" data-aos="fade-up">
+      <span class="sub-title font-playfair" style="color: var(--clr-accent-gold);">Take Action for Your Sight</span>
+      <h2 class="heading-lg font-playfair" style="color: #fff; margin-bottom: 1.2rem;">
+        Your Vision Matters. Let Us Care for It.
+      </h2>
+      <p class="font-playfair" style="max-width: 650px; margin: 0 auto 2.5rem auto; font-size: 1.18rem; color: rgba(255, 255, 255, 0.82); line-height: 1.6;">
+        Take the first step towards better eye health with personalized consultations and professional eye care.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap;">
+        <button class="btn btn-accent font-playfair" data-modal-target="bookingModal">
+          Book an Appointment <i class="fa-regular fa-calendar-check"></i>
+        </button>
+        <a href="contact.html" class="btn btn-outline font-playfair" style="color: #fff; border-color: #fff;">
+          Contact Our Clinic <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/images/logo_0027.webp" alt="Stackly Logo" class="site-logo footer-logo">
+          </a>
+          <p class="footer-desc">
+            A contemporary medical optometry and ophthalmology practice setting new benchmarks in diagnostic accuracy, laser surgery, and bespoke optical frame curation.
+          </p>
+          <div class="footer-socials">
+            <a href="404.html" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="404.html" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="404.html" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="404.html" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Clinic</a>
+            <a href="services.html">Services & Surgery</a>
+            <a href="blog.html">Eye Care Blog</a>
+            <a href="contact.html">Contact & Hours</a>
+            <a href="login.html">Patient Portal</a>
+          </div>
+        </div>
+
+        <!-- Clinical Services -->
+        <div>
+          <h4 class="footer-title">Clinical Care</h4>
+          <div class="footer-links">
+            <a href="services.html">Comprehensive Eye Exam</a>
+            <a href="services.html">LASIK & Refractive Surgery</a>
+            <a href="services.html">Dry Eye Thermal Spa</a>
+            <a href="services.html">Pediatric Ortho-K Lenses</a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="footer-title">Salem Clinic Suite</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>MMR Complex, Chinna Thirupathi, near Chinna Muniyappan Kovil, Salem, Tamil Nadu 636008</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>9876543210</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@stackly.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-regular fa-clock"></i>
+            <span>Mon-Sat: 9:00 AM - 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NEO OCULAR Eye Care Clinic. All Rights Reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="404.html" style="color: inherit;">Privacy Policy</a>
+          <a href="404.html" style="color: inherit;">Terms of Service</a>
+          <a href="404.html" style="color: inherit;">HIPAA Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="sub-title" style="margin-bottom: 0.2rem;">Appointment Request</span>
+          <h3 class="heading-sm">Schedule Your Eye Consultation</h3>
+        </div>
+        <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <div class="modal-body">
+        <form id="appointmentForm">
+          <div class="form-group">
+            <label class="form-label">Patient Full Name *</label>
+            <input type="text" id="bookName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" id="bookPhone" class="form-control" placeholder="+1 (555) 019-2834" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input type="email" id="bookEmail" class="form-control" placeholder="sarah@example.com" required>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label class="form-label">Select Service *</label>
+              <select id="bookService" class="form-control" required>
+                <option value="Comprehensive Exam">40-Point Comprehensive Exam</option>
+                <option value="LASIK Consultation">Femtosecond LASIK Consultation</option>
+                <option value="Dry Eye Spa">Dry Eye Thermal Spa Treatment</option>
+                <option value="Pediatric Ortho-K">Pediatric Ortho-K Evaluation</option>
+                <option value="Bespoke Frame Styling">Bespoke Optical Frame Styling</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Date *</label>
+              <input type="date" id="bookDate" class="form-control" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Special Notes / Symptoms</label>
+            <textarea id="bookNotes" class="form-control" placeholder="Mention any specific visual symptoms or preferred time of day..." style="min-height: 80px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            Confirm Appointment Request <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH MODAL -->
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-container" style="max-width: 520px;">
+      <div class="modal-header">
+        <h3 class="heading-sm">Search Neo Ocular</h3>
+        <div class="modal-close"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search treatments, doctors, services, or articles..." autofocus>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;">Search Site</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <!-- Custom JS Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>

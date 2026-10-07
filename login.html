@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient & Doctor Portal Sign In | NEO OCULAR</title>
+  <meta name="description" content="Sign in to your personal Neo Ocular patient portal to view appointments, test reports, and vision prescriptions.">
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body style="background: url('assets/images/hero_clinic_bg.webp') center/cover no-repeat fixed; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2.5rem 1rem; position: relative;">
+
+  <!-- Brand Logo Header (Top Left Link to Home) -->
+  <div style="position: absolute; top: 2rem; left: 2.5rem;">
+    <a href="index.html" class="brand-logo" style="text-decoration: none;">
+      <img src="assets/images/logo_0027.webp" alt="Stackly Logo" class="site-logo">
+    </a>
+  </div>
+
+  <!-- Main Standalone Auth Card Container -->
+  <div class="container" style="max-width: 580px; width: 100%; margin: 2rem auto;">
+    
+    <!-- Auth Card with Glassmorphism Styling -->
+    <div id="authCardContainer" style="background: rgba(255, 255, 255, 0.65); backdrop-filter: blur(25px) saturate(180%); -webkit-backdrop-filter: blur(25px) saturate(180%); padding: 3rem 2.8rem 2.5rem 2.8rem; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.85); box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.9);" data-aos="fade-up">
+      
+      <!-- Card Title & Subtitle Header -->
+      <div style="text-align: center; margin-bottom: 1.8rem;" class="font-playfair">
+        <span id="portalSubTitle" class="sub-title font-playfair" style="margin-bottom: 0.3rem; display: block; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: #8A6D3B; font-weight: 700;">PATIENT SIGN IN</span>
+        <h2 id="portalTypeTitle" class="heading-md font-playfair" style="margin-bottom: 0.4rem; font-size: 2.4rem; color: #141619; font-weight: 800;">Welcome Back.</h2>
+        <p id="portalSubText" class="font-playfair" style="font-size: 1.05rem; color: #2D3136; font-weight: 500;">Your vision journey continues here.</p>
+      </div>
+
+      <!-- Role Selection Buttons: Patient vs Doctor -->
+      <div style="display: flex; gap: 1rem; margin-bottom: 2rem;" class="font-playfair">
+        <button type="button" id="btnRolePatient" class="btn font-playfair auth-role-btn active" data-role="patient" style="flex: 1; padding: 0.85rem 1rem; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 12px; background: #141619; color: #FFFFFF; font-weight: 700; border: none; box-shadow: 0 6px 18px rgba(20,22,25,0.25); cursor: pointer; transition: all 0.25s ease;">
+          <i class="fa-solid fa-user-injured" style="margin-right: 6px; color: var(--clr-accent-gold);"></i> Patient
+        </button>
+        <button type="button" id="btnRoleDoctor" class="btn font-playfair auth-role-btn" data-role="doctor" style="flex: 1; padding: 0.85rem 1rem; font-size: 0.95rem; letter-spacing: 0.5px; border-radius: 12px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #141619; font-weight: 700; box-shadow: 0 4px 15px rgba(0,0,0,0.04); cursor: pointer; transition: all 0.25s ease;">
+          <i class="fa-solid fa-user-md" style="margin-right: 6px; color: var(--clr-accent-teal);"></i> Doctor
+        </button>
+      </div>
+
+      <!-- SIGN IN FORM VIEW -->
+      <div id="loginFormView">
+        <form id="loginForm" class="font-playfair">
+          <input type="hidden" id="authRoleInput" value="patient">
+
+          <div class="form-group" style="margin-bottom: 1.4rem;">
+            <label class="form-label font-playfair" style="font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #141619;">Email Address *</label>
+            <input type="email" id="loginEmail" class="form-control font-playfair" placeholder="name@example.com" required style="padding: 0.9rem 1.2rem; font-size: 1rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #141619; font-weight: 500;">
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.4rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+              <label class="form-label font-playfair" style="margin-bottom: 0; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #141619;">Password *</label>
+              <a href="#" data-auth-toggle="recovery" class="font-playfair" style="font-size: 0.85rem; color: #8A6D3B; font-weight: 700; text-decoration: underline;">Forgot Password?</a>
+            </div>
+            <input type="password" id="loginPassword" class="form-control font-playfair" placeholder="••••••••" required style="padding: 0.9rem 1.2rem; font-size: 1rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); color: #141619; font-weight: 500;">
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.8rem;">
+            <input type="checkbox" id="rememberMe" style="cursor: pointer; width: 18px; height: 18px; accent-color: #141619;">
+            <label for="rememberMe" class="font-playfair" style="font-size: 0.95rem; color: #2D3136; cursor: pointer; font-weight: 600;">Remember Me</label>
+          </div>
+
+          <button type="submit" class="btn font-playfair" style="width: 100%; padding: 1.1rem; font-size: 1.05rem; font-weight: 700; letter-spacing: 1.5px; border-radius: 10px; text-transform: uppercase; background: #141619; color: #FFFFFF; box-shadow: 0 10px 25px rgba(20, 22, 25, 0.25); border: none;">
+            Sign In <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i>
+          </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 1.8rem; font-size: 0.98rem; color: #2D3136; font-weight: 500;" class="font-playfair">
+          Don't have an account? 
+          <a href="#" data-auth-toggle="register" style="color: #0D828A; font-weight: 700; text-decoration: underline;">Create Your Account</a>
+        </div>
+      </div>
+
+      <!-- REGISTER FORM VIEW -->
+      <div id="registerFormView" style="display: none;">
+        <div style="text-align: center; margin-bottom: 1.5rem;" class="font-playfair">
+          <h3 class="font-playfair" style="font-size: 1.5rem; margin-bottom: 0.3rem; color: #141619;">Create Patient Account</h3>
+          <p style="font-size: 0.9rem; color: #2D3136;">Register to access your appointments and medical records.</p>
+        </div>
+        <form id="registerForm" class="font-playfair">
+          <div class="form-group" style="margin-bottom: 1.2rem;">
+            <label class="form-label font-playfair" style="font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #141619;">Full Name *</label>
+            <input type="text" id="regName" class="form-control font-playfair" placeholder="e.g. Sarah Jenkins" required style="padding: 0.85rem 1.1rem; font-size: 0.95rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.95);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1.2rem;">
+            <label class="form-label font-playfair" style="font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #141619;">Email Address *</label>
+            <input type="email" id="regEmail" class="form-control font-playfair" placeholder="sarah@example.com" required style="padding: 0.85rem 1.1rem; font-size: 0.95rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.95);">
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label class="form-label font-playfair" style="font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #141619;">Create Password *</label>
+            <input type="password" id="regPassword" class="form-control font-playfair" placeholder="Minimum 8 characters" required style="padding: 0.85rem 1.1rem; font-size: 0.95rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.95);">
+          </div>
+          <button type="submit" class="btn font-playfair" style="width: 100%; padding: 1rem; font-size: 1rem; font-weight: 700; border-radius: 10px; text-transform: uppercase; background: var(--clr-accent-teal); color: #FFFFFF; border: none; box-shadow: 0 8px 20px rgba(13, 130, 138, 0.3);">
+            Create Account <i class="fa-solid fa-user-plus" style="margin-left: 6px;"></i>
+          </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 1.5rem; font-size: 0.92rem; color: #2D3136;" class="font-playfair">
+          Already registered? 
+          <a href="#" data-auth-toggle="login" style="color: #0D828A; font-weight: 700; text-decoration: underline;">Sign In</a>
+        </div>
+      </div>
+
+      <!-- RECOVERY FORM VIEW -->
+      <div id="recoveryFormView" style="display: none;">
+        <div style="text-align: center; margin-bottom: 1.5rem;" class="font-playfair">
+          <h3 class="font-playfair" style="font-size: 1.5rem; margin-bottom: 0.3rem; color: #141619;">Password Recovery</h3>
+          <p style="font-size: 0.9rem; color: #2D3136;">Enter your email address to receive password reset instructions.</p>
+        </div>
+        <form id="recoveryForm" class="font-playfair">
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label class="form-label font-playfair" style="font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #141619;">Email Address *</label>
+            <input type="email" id="resetEmail" class="form-control font-playfair" placeholder="name@example.com" required style="padding: 0.85rem 1.1rem; font-size: 0.95rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.95);">
+          </div>
+          <button type="submit" class="btn font-playfair" style="width: 100%; padding: 1rem; font-size: 1rem; font-weight: 700; border-radius: 10px; text-transform: uppercase; background: #141619; color: #FFFFFF; border: none; box-shadow: 0 8px 20px rgba(20, 22, 25, 0.25);">
+            Send Reset Link <i class="fa-solid fa-paper-plane" style="margin-left: 6px;"></i>
+          </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 1.5rem; font-size: 0.92rem; color: #2D3136;" class="font-playfair">
+          Remembered your password? 
+          <a href="#" data-auth-toggle="login" style="color: #0D828A; font-weight: 700; text-decoration: underline;">Back to Sign In</a>
+        </div>
+      </div>
+
+      <!-- Inside Card Action Button: Back to Home -->
+      <div style="text-align: center; margin-top: 2rem; border-top: 1px solid rgba(0, 0, 0, 0.08); padding-top: 1.4rem;">
+        <a href="index.html" class="font-playfair" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); padding: 0.65rem 1.6rem; border-radius: var(--radius-full); border: 1px solid rgba(255, 255, 255, 0.95); box-shadow: 0 4px 15px rgba(0,0,0,0.06); font-size: 0.92rem; color: #141619; font-weight: 700; text-decoration: none; transition: var(--transition-fast);">
+          <i class="fa-solid fa-arrow-left" style="color: var(--clr-accent-gold);"></i> Back to Home
+        </a>
+      </div>
+
+    </div>
+
+    <!-- SIMULATED DASHBOARD VIEW (Shown upon login) -->
+    <div id="dashboardContainer" style="display: none; background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(25px) saturate(180%); -webkit-backdrop-filter: blur(25px) saturate(180%); padding: 3rem 2.5rem; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.9); box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);" data-aos="fade-up">
+      <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 1.5rem;">
+        <div>
+          <span id="dashUserRole" class="service-badge" style="position: static; display: inline-block; margin-bottom: 0.4rem;">PATIENT</span>
+          <h2 id="dashUserName" class="heading-md font-playfair" style="color: #141619;">Sarah Jenkins</h2>
+        </div>
+        <button id="btnLogout" class="btn font-playfair" style="padding: 0.6rem 1.2rem; font-size: 0.85rem; border-radius: 10px; background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(0,0,0,0.15); color: #141619; font-weight: 600;">
+          <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+        </button>
+      </div>
+
+      <div id="dashContentBody" class="font-playfair">
+        <!-- Dynamic Dashboard Content Injected by auth.js -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

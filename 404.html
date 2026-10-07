@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | NEO OCULAR</title>
+  <meta name="description" content="The page you are looking for does not exist or has been moved. Return to Neo Ocular eye care clinic homepage.">
+
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background-color: var(--clr-bg-main); margin: 0; padding: 0;">
+
+  <!-- 404 Error Standalone Main Section -->
+  <section class="error-404-section" style="width: 100%; display: flex; align-items: center; justify-content: center; padding: 3rem 1.5rem; text-align: center;">
+    <div class="container" style="max-width: 750px;">
+      
+      <!-- 404 Display -->
+      <div class="error-code-wrapper" style="display: flex; align-items: center; justify-content: center; gap: 0.1rem; margin-bottom: 2rem;" data-aos="fade-down">
+        <span class="error-digit" style="font-size: clamp(6.5rem, 16vw, 11rem); font-weight: 800; font-family: var(--font-jakarta); color: #2D3136; line-height: 1; letter-spacing: -2px;">404</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="error-heading font-jakarta" style="font-size: clamp(2.2rem, 4.5vw, 3.2rem); font-weight: 800; color: #1D2125; margin-bottom: 0.9rem; letter-spacing: -0.5px;" data-aos="fade-up" data-aos-delay="100">
+        Boo! Page missing!
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="error-subtext font-jakarta" style="font-size: clamp(1.05rem, 2vw, 1.25rem); color: var(--clr-text-muted); margin-bottom: 2.8rem; font-weight: 500; line-height: 1.5;" data-aos="fade-up" data-aos-delay="200">
+        Whoops! This page must be a ghost - it's not here!
+      </p>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; justify-content: center; align-items: center; gap: 1.2rem; flex-wrap: wrap; flex-direction: row;" data-aos="fade-up" data-aos-delay="300">
+        <button onclick="window.history.back()" class="btn btn-outline" style="padding: 0.95rem 2.2rem; font-size: 0.88rem; cursor: pointer; border-radius: var(--radius-sm);">
+          <i class="fa-solid fa-arrow-left"></i> Back to Previous Page
+        </button>
+        <a href="index.html" class="btn btn-primary" style="padding: 0.95rem 2.2rem; font-size: 0.88rem; border-radius: var(--radius-sm);">
+          <i class="fa-solid fa-house"></i> Back to Home
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
