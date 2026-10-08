@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NEO OCULAR - APPOINTMENT SCHEDULER & BOOKING SYSTEM
+   STACKLY - APPOINTMENT SCHEDULER & BOOKING SYSTEM
    Interactive Multi-Step Appointment Request & Real-time Validation
    ========================================================================== */
 

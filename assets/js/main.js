@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NEO OCULAR - MAIN JAVASCRIPT ENGINE
+   STACKLY - MAIN JAVASCRIPT ENGINE
    GSAP Motion, AOS Initialization, Interactive Tools & UI State
    ========================================================================== */
 

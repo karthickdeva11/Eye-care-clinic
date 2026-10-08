@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NEO OCULAR - AUTHENTICATION & ROLE-BASED DASHBOARD SYSTEM
+   STACKLY - AUTHENTICATION & ROLE-BASED DASHBOARD SYSTEM
    Patient & Doctor Access, Role Switching, and Dashboard Redirection
    ========================================================================== */
 
@@ -106,13 +106,14 @@ function initAuthSubmit() {
       const redirectPage = role === 'doctor' ? 'doctor_dashboard.html' : 'patient_dashboard.html';
 
       const userSession = {
-        email: email || (role === 'doctor' ? 'dr.elena.rostova@neoocular.com' : 'patient.sarah@neoocular.com'),
+        email: email || (role === 'doctor' ? 'dr.elena.rostova@stackly.com' : 'patient.sarah@stackly.com'),
         name: userName,
         role: role,
         loggedIn: true,
         loginTime: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       };
 
+      localStorage.setItem('stackly_user', JSON.stringify(userSession));
       localStorage.setItem('neo_user', JSON.stringify(userSession));
 
       if (typeof showToast === 'function') {

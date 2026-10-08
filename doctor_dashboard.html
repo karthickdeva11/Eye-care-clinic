@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor & Practitioner Portal | NEO OCULAR</title>
-  <meta name="description" content="Neo Ocular Doctor Portal - Clinical patient queue, surgical schedules, diagnostic OCT imaging, and electronic health records.">
+  <title>Doctor & Practitioner Portal | STACKLY</title>
+  <meta name="description" content="Stackly Doctor Portal - Clinical patient queue, surgical schedules, diagnostic OCT imaging, and electronic health records.">
 
   <!-- External Libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -355,7 +355,7 @@
         <div data-tab-content="ehr" style="display: none;">
           <div style="background: #fff; border-radius: 20px; border: 1px solid var(--clr-border); padding: 2rem; box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
             <h2 class="font-playfair" style="font-size: 1.6rem; font-weight: 700; color: #141619; margin-bottom: 1.5rem;">Electronic Health Records (EHR) Database</h2>
-            <p style="font-size: 0.9rem; color: var(--clr-text-muted); margin-bottom: 1.5rem;">Access encrypted HIPAA-compliant clinical history for all registered Neo Ocular patients.</p>
+            <p style="font-size: 0.9rem; color: var(--clr-text-muted); margin-bottom: 1.5rem;">Access encrypted HIPAA-compliant clinical history for all registered Stackly patients.</p>
             <div style="padding: 1.5rem; background: var(--clr-bg-main); border-radius: 12px; border: 1px solid var(--clr-border);">
               <h3 style="font-size: 1.1rem; font-weight: 700; color: #141619; margin-bottom: 0.5rem;">Sarah Jenkins — Medical Chart #P-88492</h3>
               <p style="font-size: 0.88rem; color: var(--clr-text-muted); margin-bottom: 0;">
@@ -391,7 +391,7 @@
     <!-- Footer -->
     <footer style="background: #141619; color: rgba(255,255,255,0.6); padding: 1.8rem 0; margin-top: auto;">
       <div class="container text-center" style="font-size: 0.88rem;">
-        &copy; 2026 NEO OCULAR Eye Care Clinic • Practitioner Clinical Portal Access
+        &copy; 2026 STACKLY Eye Care Clinic • Practitioner Clinical Portal Access
       </div>
     </footer>
 
@@ -474,7 +474,7 @@
     }
 
     // Auto populate logged in doctor name & avatar initial if available in localStorage
-    const stored = localStorage.getItem('neo_user');
+    const stored = localStorage.getItem('stackly_user') || localStorage.getItem('neo_user');
     if (stored) {
       try {
         const u = JSON.parse(stored);
