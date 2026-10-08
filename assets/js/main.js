@@ -102,6 +102,7 @@ function initNavbar() {
 
     const closeMenu = () => {
       navMenu.classList.remove('active');
+      document.body.classList.remove('menu-open');
       if (icon) {
         icon.classList.add('fa-bars');
         icon.classList.remove('fa-xmark');
@@ -110,9 +111,14 @@ function initNavbar() {
 
     mobileToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      navMenu.classList.toggle('active');
+      const isActive = navMenu.classList.toggle('active');
+      if (isActive) {
+        document.body.classList.add('menu-open');
+      } else {
+        document.body.classList.remove('menu-open');
+      }
       if (icon) {
-        if (navMenu.classList.contains('active')) {
+        if (isActive) {
           icon.classList.remove('fa-bars');
           icon.classList.add('fa-xmark');
         } else {
@@ -130,7 +136,14 @@ function initNavbar() {
 
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (!navbar.contains(e.target)) {
+      if (!navbar.contains(e.target) && navMenu.classList.contains('active')) {
+        closeMenu();
+      }
+    });
+
+    // Close menu on press Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('active')) {
         closeMenu();
       }
     });
